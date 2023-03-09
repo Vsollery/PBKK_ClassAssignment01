@@ -26,6 +26,8 @@
                 //Get current date and time.
                 new DataViewModel(typeof(DateTimePage), "DateTime", "Obtain the current DateTime and display it"),
 
+                new DataViewModel(typeof(ClockPage),"Clock", "Dynamically display current time"),
+
             };
         }
         public static IList<DataViewModel> All { private set; get; }
