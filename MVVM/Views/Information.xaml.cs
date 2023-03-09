@@ -1,4 +1,4 @@
-namespace MVVM.Views;
+namespace MVVM;
 
 public partial class Information : ContentPage
 {

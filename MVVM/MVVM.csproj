@@ -62,6 +62,9 @@
 	  <MauiXaml Update="Views\HslColorPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\Information.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\KeypadPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
