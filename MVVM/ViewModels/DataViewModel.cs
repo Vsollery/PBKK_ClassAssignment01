@@ -28,6 +28,8 @@
 
                 new DataViewModel(typeof(ClockPage),"Clock", "Dynamically display current time"),
 
+                new DataViewModel(typeof(HslColorPage),"Color", "Use a view model to select HSL colors"),
+
             };
         }
         public static IList<DataViewModel> All { private set; get; }
