@@ -38,6 +38,8 @@ The slider are able to rotate the labels.
 
 ### 1. Add additional component named Info.razor which contains your student ID and name.
 
+<img class=mobile-image src="/img/add_component_info.png" width="50%" height="50%"/>
+
 ### 2. Put the component on the Index.razor (below Counter component).
 
 A new info component is made and is placed under the counter component on Index.razor
