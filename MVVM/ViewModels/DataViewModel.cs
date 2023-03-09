@@ -30,6 +30,8 @@
 
                 new DataViewModel(typeof(HslColorPage),"Color", "Use a view model to select HSL colors"),
 
+                 new DataViewModel(typeof(KeypadPage),"Keypad", "Use a view model for numeric keypad logic"),
+
             };
         }
         public static IList<DataViewModel> All { private set; get; }
