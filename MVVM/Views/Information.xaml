@@ -4,37 +4,31 @@
              x:Class="MVVM.Information"
              xmlns:local ="clr-namespace:MVVM"
              Title="Information">
-    
-    <Grid RowDefinitions="100, Auto, *" 
-          ColumnDefinitions=".75*, .25*"
-          Padding="10"
-          RowSpacing="10"
-          ColumnSpacing="10">
+    <VerticalStackLayout>
+        <Label Text="5025201161"
+               BindingContext="{x:Reference slider}"
+               Rotation="{Binding Path=Value}"
+               FontAttributes="Bold"
+               FontSize="18"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
 
-        <Image Grid.ColumnSpan="2" 
-               Source="dotnet_bot.png"
-               BackgroundColor="Orange" />
+        <Label Text="Venia Sollery Aliyya Hasna"
+               BindingContext="{x:Reference slider}"
+               Rotation="{Binding Path=Value}"
+               FontAttributes="Bold"
+               FontSize="18"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
 
-       
 
-        <CollectionView Grid.Row="2" Grid.ColumnSpan="2">
-            <CollectionView.ItemsSource>
-                <x:Array Type="{x:Type x:String}">
-                    <x:String>Venia Sollery Aliyya Hasna</x:String>
-                    <x:String>5025201161</x:String>
-                </x:Array>
-            </CollectionView.ItemsSource>
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <Grid Padding="0,5">
-                        <Frame>
-                            <Label Text="{Binding .}"
-                                   FontSize="20" />
-                        </Frame>
-                    </Grid>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-    </Grid>
-    
+        <Slider x:Name="slider"
+                Maximum="360"
+                VerticalOptions="Center"/>
+        
+        
+
+    </VerticalStackLayout>
+
+
 </ContentPage>

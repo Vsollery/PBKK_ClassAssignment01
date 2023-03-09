@@ -6,6 +6,7 @@
              Padding="5,0"
              Title="Class Assigment">
 
+
     <ListView ItemsSource="{x:Static local:DataViewModel.All}"
 			  ItemSelected="OnListViewItemSelected">
         <ListView.ItemTemplate>
